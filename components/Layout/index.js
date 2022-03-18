@@ -1,12 +1,12 @@
-import Navbar from "../Navbar";
+// import Navbar from "../Navbar";
 
-const Layout = ({ children }) => {
-  return (
-    <div className="content">
-      <Navbar />
-      {children}
-    </div>
-  );
-};
+// const Layout = ({ children }) => {
+//   return (
+//     <div className="content">
+//       <Navbar />
+//       {children}
+//     </div>
+//   );
+// };
 
-export default Layout;
+// export default Layout;
