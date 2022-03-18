@@ -1,0 +1,35 @@
+@mixin desktop() {
+  @media screen and (min-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop2() {
+  @media screen and (min-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin desktop3() {
+  @media screen and (min-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin HideMobile {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin MobileChange() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin Below320() {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}

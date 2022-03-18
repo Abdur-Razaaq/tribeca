@@ -1,0 +1,73 @@
+@import "../../styles/_mqueries.scss";
+
+.navContainer {
+  height: 60px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navstyles {
+  display: flex;
+  justify-self: center;
+  height: 60px;
+}
+.NavItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logoContainer {
+  width: 43px;
+  height: 24.41px;
+  margin-left: 23px;
+  margin-top: 1px;
+  margin-bottom: 0;
+  margin-right: 0;
+  position: relative;
+}
+.logo {
+  margin: 0;
+  position: relative;
+}
+.btn {
+  width: 25px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 18px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+@include HideMobile {
+  .fullwidth {
+    display: none;
+  }
+}
+
+@include desktop() {
+  .navContainer {
+    height: 120px;
+  }
+  .logoContainer {
+    width: 104px;
+    height: 59.03px;
+    margin-left: 44px;
+    margin-top: 0;
+  }
+  .btn {
+    display: none;
+  }
+  .navstyles {
+    width: 99.9%;
+    height: 120px;
+  }
+}
+
+.BtnImage {
+  width: 25px;
+  height: 15px;
+}

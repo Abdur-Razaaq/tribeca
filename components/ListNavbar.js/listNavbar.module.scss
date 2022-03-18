@@ -1,0 +1,61 @@
+@import "../../styles/_mqueries.scss";
+
+@include desktop() {
+  .menu {
+    display: none;
+    justify-content: initial;
+  }
+  .FullMenuItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Ubuntu, sans-serif;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .FullMenuItems {
+    color: #676868;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-left: 0px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    &:hover {
+      color: darken($color: #16a8db, $amount: 5%);
+    }
+  }
+}
+
+@include desktop2() {
+  .btn {
+    display: none;
+  }
+  .menu {
+    display: none;
+    justify-content: initial;
+  }
+  .FullMenuItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Ubuntu, sans-serif;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .FullMenuItems {
+    color: #676868;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-left: 12px;
+    padding-right: 41px;
+    padding-bottom: 5px;
+    margin-left: -2.3px;
+    margin-right: -0.8px;
+  }
+}

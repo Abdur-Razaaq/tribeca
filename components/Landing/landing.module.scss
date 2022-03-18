@@ -1,0 +1,184 @@
+@import "../../styles/_mqueries.scss";
+
+.landingImage {
+  position: relative;
+  z-index: -100;
+}
+
+.LandingContainer {
+  position: relative;
+  height: 80.5vh;
+  min-height: 440px;
+  padding: 23px;
+  width: 100%;
+}
+
+.theMask {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 6px;
+  margin-bottom: -4px;
+}
+
+.whiteOne {
+  margin: 0;
+}
+
+.LandingContainer > span {
+  z-index: -1;
+}
+
+.headingContainer {
+  padding-top: 65px;
+  margin-left: -0.5px;
+}
+
+.MainHeading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 29.81px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  line-height: 32.6px;
+  letter-spacing: -0.7px;
+
+  .blue {
+    font-weight: 400;
+    color: #16a8db;
+    letter-spacing: normal;
+  }
+}
+
+.info {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+
+  .infoText {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #16a8db;
+    font-size: 12px;
+    line-height: 20px;
+    width: 80%;
+    letter-spacing: -0.09px;
+  }
+
+  .infoButton {
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 0;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    background: #16a8db;
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 190px;
+    height: 34px;
+    letter-spacing: 0.5px;
+    transition: 100ms;
+    &:hover {
+      background: darken($color: #16a8db, $amount: 8%);
+    }
+  }
+}
+
+@include desktop {
+  .LandingContainer {
+    height: 65vh;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 0;
+  }
+  .headingContainer {
+    padding-top: 30px;
+    .MainHeading {
+      font-size: 45px;
+      line-height: 60px;
+      letter-spacing: -1.3px;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    .infoText {
+      width: 40%;
+      font-size: 16px;
+    }
+    .infoButton {
+      margin-top: 39px;
+    }
+  }
+  .pText {
+    display: inline-block;
+    overflow: hidden;
+  }
+  .theMask {
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 12px;
+  }
+
+  .whiteOne {
+    margin: 0;
+    line-height: 0.1;
+  }
+}
+
+@include desktop2 {
+  .LandingContainer {
+    height: 63vh;
+    padding: 72px 90px;
+
+    .headingContainer {
+      padding-top: 1px;
+      margin-top: 0;
+
+      .MainHeading {
+        font-size: 56px;
+        line-height: 62.38px;
+        letter-spacing: -1.3px;
+        .blue {
+          letter-spacing: -0.2px;
+        }
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 42px;
+
+    .pText {
+      display: inline-block;
+      overflow: hidden;
+      width: 500px;
+      .infoText {
+        font-size: 16px;
+        width: 90%;
+        line-height: 27px;
+        display: block;
+        overflow: hidden;
+        display: inline-block;
+      }
+      .infoButton {
+        margin-top: 37px;
+        margin-left: 310px;
+      }
+    }
+  }
+  .whiteOne {
+    line-height: 1.5;
+  }
+}
+
+@include desktop3 {
+  .LandingContainer {
+    height: 70vh;
+  }
+}

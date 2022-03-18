@@ -1,0 +1,58 @@
+@import "../../styles/_mqueries.scss";
+
+/* Menu */
+
+.menu {
+  background: #06344c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 900;
+}
+
+.MenuItem {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 31px;
+  padding-bottom: 156px;
+}
+
+.MenuItems {
+  font-family: Ubuntu, sans-serif;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid #16a8db;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 14px;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+}
+
+/* Navbar 1024px */
+
+@include desktop() {
+  .menu {
+    display: none;
+    justify-content: initial;
+  }
+}
+
+/* Navbar 1280px */
+
+@include desktop2() {
+  .btn {
+    display: none;
+  }
+  .menu {
+    display: none;
+    justify-content: initial;
+  }
+}
