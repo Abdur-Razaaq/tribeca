@@ -1,0 +1,44 @@
+@import "../../styles/_mqueries.scss";
+
+.ImageContainer {
+  width: 100%;
+  height: 50vw;
+  position: relative;
+}
+
+.textScroll {
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.scrollTextContent {
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 26.5px;
+}
+
+@include desktop {
+  .aboutContentInfo {
+    display: flex;
+    height: 310px;
+    .ImageContainer {
+      width: 50%;
+      height: inherit;
+    }
+    .textScroll {
+      width: 50%;
+      overflow: scroll;
+      padding-left: 65px;
+      padding-right: 85px;
+      padding-top: 12px;
+      p {
+        font-size: 16px;
+        line-height: 26.5px;
+        padding-bottom: 11px;
+        letter-spacing: -0.2px;
+      }
+    }
+  }
+}

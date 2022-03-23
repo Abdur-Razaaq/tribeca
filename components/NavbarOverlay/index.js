@@ -10,7 +10,7 @@ const Menu = () => {
             <li className={styles.MenuItems}>Home</li>
           </a>
         </Link>
-        <Link href="/">
+        <Link href="./WhoWeAre">
           <a>
             <li className={styles.MenuItems}>Who We Are</li>
           </a>

@@ -23,7 +23,7 @@ const Navlist = () => {
           </li>
         </a>
       </Link>
-      <Link href="/">
+      <Link href="./WhoWeAre">
         <a>
           <li id="ItemAnimate" className={styles.FullMenuItems}>
             Who We Are

@@ -1,0 +1,114 @@
+@import "../../styles/_mqueries.scss";
+
+.bannerContainer {
+  position: relative;
+  height: 80.5vh;
+}
+
+.bannerContainer > span {
+  position: relative;
+  z-index: -100;
+}
+
+.aboutImage {
+  position: relative;
+  z-index: -100;
+}
+
+.bannerContent {
+  height: 100%;
+  margin-left: -8px;
+  padding: 88px 30px;
+  width: 100%;
+  h1 {
+    font-size: 29.81px;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    line-height: 33.21px;
+    margin: 0;
+    color: white;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+
+    .blue {
+      color: #16a8db;
+      font-weight: 400;
+      letter-spacing: normal;
+    }
+  }
+  div {
+    .whiteText {
+      margin-bottom: 1px;
+      font-size: 14px;
+      font-family: "Ubuntu", sans-serif;
+      line-height: 22px;
+      color: white;
+      letter-spacing: -0.09px;
+    }
+    .blueText {
+      margin-bottom: 0px;
+      font-size: 12px;
+      line-height: 20px;
+      margin-top: 21px;
+      letter-spacing: 0.1px;
+      color: #16a8db;
+      width: 93%;
+    }
+  }
+}
+
+@include desktop {
+  .bannerContainer {
+    height: 290px; //change to vh
+    display: flex;
+    .AboutHeading {
+      font-size: 50px;
+      line-height: 55.7px;
+      width: 50%;
+      padding-left: 89px;
+      padding-top: 46px;
+      letter-spacing: -0.7px;
+    }
+    .AboutBannerText {
+      width: 50%;
+      padding-left: 46px;
+      padding-right: 29px;
+      padding-top: 6px;
+      .whiteText {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.1px;
+      }
+      .blueText {
+        font-size: 16px;
+        letter-spacing: 0.05px;
+        line-height: 27.5px;
+      }
+    }
+  }
+  .bannerContent {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@include desktop2 {
+  .AboutHeading {
+    padding-left: 89px;
+    padding-top: 46px;
+    letter-spacing: -0.7px;
+  }
+
+  .AboutBannerText {
+    padding-left: 46px;
+    padding-right: 29px;
+    padding-top: 6px;
+    .whiteText {
+      letter-spacing: -0.1px;
+    }
+    .blueText {
+      letter-spacing: 0.05px;
+    }
+  }
+}
